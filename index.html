@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shay — 作品集</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="card profile">
+        <div class="avatar"></div>
+
+        <div class="name">Shay</div>
+        <div class="role">· 现代C++</div>
+        <div class="role">· 游戏黑客</div>
+        <div class="role">· 逆向工程</div>
+
+        <div class="divider"></div>
+
+        <div class="sectionTitle">Languages</div>
+        <div class="chips">
+          <span class="chip">C++</span>
+          <span class="chip">C</span>
+          <span class="chip">Rust</span>
+          <span class="chip">Python</span>
+        </div>
+
+        <div class="sectionTitle">Links</div>
+        <div class="links">
+          <a class="link" href="https://github.com/shay-star" id="linkGithub"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a class="link" href="https://paysonism.wtf" id="linkWebsite"><i class="fa-solid fa-link"></i> My Personal Website</a>
+           <a class="link" href="https://space.bilibili.com/39783002" id="linkBilibili"><i class="fa-brands fa-bilibili"></i> bilibili</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="mini">
+          <div class="miniLabel">Status</div>
+          <div class="miniValue">学习、工作</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="card hero">
+        <h1>Shay</h1>
+        <p class="about">
+        我是一名对游戏黑客和现代C++特性充满热情的开发者。2026年，我计划开启一段全新的篇章，在业余时间深入逆向工程和游戏黑客技术。
+        </p>
+      </section>
+
+      <section class="grid2">
+
+        <div class="card panel recent">
+          <div class="panelHead">
+            <div>
+              <div class="panelTitle"> 最近更新</div>
+              <div class="muted">Most recent commits</div>
+            </div>
+            <div class="badge"><i class="fa-solid fa-timeline"></i></div>
+          </div>
+
+          <div id="recentList" class="repoList">
+            <div class="skeleton">加载中…</div>
+          </div>
+
+          <div class="panelFoot muted" id="recentFoot"></div>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        © <span id="year"></span> · Shay
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
