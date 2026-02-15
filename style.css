@@ -409,10 +409,23 @@ h1{
 }
 
 @media (max-width:560px){
-  .repoTop{flex-direction:column;align-items:stretch}
-  .repoLink{width:100%;justify-content:center}
+    .repoTop{flex-direction:column;align-items:stretch}
+    .repoActions{
+    width:100%;
+    justify-content:flex-start;
+    }
+
+    .repoLink{
+    width:auto;   /* 关键：不要 100% */
+    }
 }
 
 @media (max-width:390px){
   .links{display:grid;grid-template-columns:1fr}
+}
+
+.repoActions{
+  display:flex;
+  align-items:center;
+  gap:6px;
 }

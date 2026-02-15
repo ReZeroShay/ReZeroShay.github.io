@@ -93,8 +93,24 @@ function repoCard(repo, extraMeta = [], showSpark = false) {
   icon.className = "fa-solid fa-arrow-up-right-from-square";
   link.appendChild(icon);
 
+  const downloadLink = document.createElement("a");
+  downloadLink.className = "repoLink";
+  downloadLink.href = repo.html_url + "/releases";
+  downloadLink.target = "_blank";
+  downloadLink.rel = "noreferrer";
+  downloadLink.setAttribute("aria-label", "Open repository");
+  downloadLink.title = "下载";
+
+  const downloadicon = document.createElement("i");
+  downloadicon.className = "fa-solid fa-download";
+  downloadLink.appendChild(downloadicon);
+
+  const right = el("div", "repoActions");
+  right.appendChild(link);
+  right.appendChild(downloadLink);
+
   top.appendChild(left);
-  top.appendChild(link);
+  top.appendChild(right);
 
   const meta = el("div", "repoMeta");
 
