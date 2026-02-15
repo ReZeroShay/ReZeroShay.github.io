@@ -3,7 +3,7 @@ const CONFIG = {
   perPage: 100,
   excludeForks: true,//排除fork
   excludeArchived: true,//排除存档
-  topic : "windows" //项目 topic必须包含该topic
+  topic : "cheat" //项目 topic必须包含该topic
 };
 
 document.getElementById("year").textContent = new Date().getFullYear();
